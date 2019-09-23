@@ -1,0 +1,79 @@
+<htmll>
+    <head>
+        <title>CRICKET PAGE</title>
+        <script>
+            function logfun()
+            {
+                
+                var x=document.form1.name.value;
+                var y=document.form1.pass.value;
+                if(x==""||y=="")
+                {
+                    alert("please enter Username and password");
+                }
+                if(x=="nanda" && y=="nanda")
+                {
+                    window.open("players.html");
+                }
+                
+            }
+        </script>
+    </head>
+<style>
+    .wel{
+        background-color: cornsilk;
+        text-align: center;
+        width: 90%;
+        height:100px;
+        border: 2px solid red;
+        border-radius: 10px;
+        margin: auto;  
+        padding: 20px;
+        outline-style: dotted;
+        outline-color: yellow;
+        text-align: center;
+    }
+h1{
+    color: blueviolet;
+    text-decoration: underline;
+    font-variant: small-caps;
+  }
+.login
+{ 
+    outline-style: dotted;
+        outline-color: yellow;
+        border: 2px solid red;
+    float:left;
+    background-color: darkgray;
+    text-align: center;
+    width: 100%;
+    height: 450px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+input[type="text"]
+{
+    width:15%;
+    height: 35px;
+}
+input[type="password"]
+{
+    width:15%;
+    height: 35px;
+}
+
+</style>
+    <body>
+        <div class="wel">
+            <br>
+            <h1> WELCOME TO MY PAGE</h1>
+        <div class="login">
+            <form name="form1">
+                <br><br><br>
+                <p> <h2>UserName</h2><input type="text" placeholder="UserName" name="name" required>
+                <h2>PassWord</h2><input type="password" placeholder="password" name="pass" required></p>
+                <input type="button" value="LOGIN" onclick="logfun()"  name="sub">
+            </form>
+
+    </body>
+</html>
